@@ -2,9 +2,10 @@
 
 def multiple_returns(sentence):
     count = 0
-    firstChar = sentence[0]
-    if sentence == '':
+    if sentence != '':
+        firstChar = sentence[0]
+        for i in range(len(sentence)):
+            count += 1
+    else:
         firstChar = None
-    for i in range(len(sentence)):
-        count += 1
     return (count, firstChar)
